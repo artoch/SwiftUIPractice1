@@ -6,53 +6,49 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct ContentView: View {
-    
-    @State private var shouldBounce = false
+    @Environment(\.modelContext) private var modelContext
+    @Query(sort: \Place.name) private var places: [ Place ]
     
     var body: some View {
-        VStack {
-            Image(.bellagio)
-                .resizable()
-                .scaledToFit()
-                .cornerRadius(20)
-            
-            Image(systemName: "globe")
-                .font(.largeTitle)
-                .imageScale(.large)
-                .foregroundColor(.blue)
-                .symbolEffect(.pulse, options: .repeat(3))
-            
-            Image(systemName: "wifi")
-                .font(.largeTitle)
-                .imageScale(.large)
-                .foregroundColor(.purple)
-                .symbolEffect(.variableColor.reversing)
-            
-            Image(systemName: "person.crop.circle.badge.plus")
-                .font(.largeTitle)
-                .imageScale(.large)
-                .foregroundColor(.blue)
-                .symbolRenderingMode(.multicolor)
-                .symbolEffect(.bounce, value: shouldBounce)
-                .onTapGesture {
-                    shouldBounce.toggle()
+        NavigationStack {
+            List(places) { place in
+                NavigationLink(value: place) {
+                    HStack {
+                        place.image
+                            .resizable()
+                            .scaledToFit()
+                            .cornerRadius(7)
+                            .frame(width: 100, height: 100)
+                        
+                        Text(place.name)
+                        
+                        Spacer()
+                        
+                        if place.interested {
+                            Image(systemName: "star.fill")
+                                .foregroundStyle(.yellow)
+                                .padding(.trailing, 15)
+                        }
+                    }
                 }
-            
-            Image(systemName: "cloud.sun.rain.fill")
-                .font(.largeTitle)
-                .imageScale(.large)
-                .foregroundStyle(.gray, .yellow, .mint)
-                .symbolEffect(.bounce, value: shouldBounce)
-                .onTapGesture {
-                    shouldBounce.toggle()
+                
+            }.navigationTitle("Places")
+                .navigationDestination(for: Place.self) { place in
+                    MapViewT(place: place)
                 }
         }
-        .padding()
+//        .task {
+//            for place in SampleTrip.places {
+//                modelContext.insert(place)
+//            }
+//        }
     }
 }
 
 #Preview {
     ContentView()
+        .modelContainer(for: Place.self)
 }

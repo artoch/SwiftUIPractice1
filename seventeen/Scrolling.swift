@@ -7,20 +7,30 @@
 
 import SwiftUI
 
-struct ScrollView: View {
+struct Scrolling: View {
     
     @State private var shouldBounce = false
     
     var body: some View {
         ScrollView {
             VStack {
-                Text("Hola como estan")
+                ScrollImage(image: .bellagio)
+                
+                ScrollImage(image: .excalibur)
+                
+                ScrollImage(image: .luxor)
+                
+                ScrollImage(image: .paris)
+                
+                ScrollImage(image: .treasureisland)
+                
+                ScrollImage(image: .stratosphere)
+                 
             }
-        }
-        .padding()
+        }.padding()
     }
 }
 
 #Preview {
-    ScrollView()
+    Scrolling()
 }

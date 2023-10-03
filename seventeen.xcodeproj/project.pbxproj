@@ -11,6 +11,12 @@
 		2533ACE12ACB63F300E982E6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2533ACE02ACB63F300E982E6 /* ContentView.swift */; };
 		2533ACE32ACB63F400E982E6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2533ACE22ACB63F400E982E6 /* Assets.xcassets */; };
 		2533ACE62ACB63F400E982E6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2533ACE52ACB63F400E982E6 /* Preview Assets.xcassets */; };
+		25C94AE02ACC689E00A6453D /* Scrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C94ADF2ACC689E00A6453D /* Scrolling.swift */; };
+		25C94AE22ACC789E00A6453D /* ScrollImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C94AE12ACC789E00A6453D /* ScrollImage.swift */; };
+		25C94AE42ACC7A1200A6453D /* MapViewT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C94AE32ACC7A1200A6453D /* MapViewT.swift */; };
+		25C94AE62ACC860F00A6453D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C94AE52ACC860F00A6453D /* Place.swift */; };
+		25C94AE82ACC87AF00A6453D /* ImageListBehavior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C94AE72ACC87AF00A6453D /* ImageListBehavior.swift */; };
+		25C94AEA2ACCBADA00A6453D /* VegasChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C94AE92ACCBADA00A6453D /* VegasChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		2533ACE02ACB63F300E982E6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2533ACE22ACB63F400E982E6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2533ACE52ACB63F400E982E6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25C94ADF2ACC689E00A6453D /* Scrolling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrolling.swift; sourceTree = "<group>"; };
+		25C94AE12ACC789E00A6453D /* ScrollImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollImage.swift; sourceTree = "<group>"; };
+		25C94AE32ACC7A1200A6453D /* MapViewT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewT.swift; sourceTree = "<group>"; };
+		25C94AE52ACC860F00A6453D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		25C94AE72ACC87AF00A6453D /* ImageListBehavior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListBehavior.swift; sourceTree = "<group>"; };
+		25C94AE92ACCBADA00A6453D /* VegasChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegasChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +64,15 @@
 			isa = PBXGroup;
 			children = (
 				2533ACDE2ACB63F300E982E6 /* seventeenApp.swift */,
+				25C94AE52ACC860F00A6453D /* Place.swift */,
+				25C94ADF2ACC689E00A6453D /* Scrolling.swift */,
+				25C94AE32ACC7A1200A6453D /* MapViewT.swift */,
+				25C94AE12ACC789E00A6453D /* ScrollImage.swift */,
 				2533ACE02ACB63F300E982E6 /* ContentView.swift */,
+				25C94AE72ACC87AF00A6453D /* ImageListBehavior.swift */,
 				2533ACE22ACB63F400E982E6 /* Assets.xcassets */,
 				2533ACE42ACB63F400E982E6 /* Preview Content */,
+				25C94AE92ACCBADA00A6453D /* VegasChart.swift */,
 			);
 			path = seventeen;
 			sourceTree = "<group>";
@@ -139,6 +157,12 @@
 			files = (
 				2533ACE12ACB63F300E982E6 /* ContentView.swift in Sources */,
 				2533ACDF2ACB63F300E982E6 /* seventeenApp.swift in Sources */,
+				25C94AE22ACC789E00A6453D /* ScrollImage.swift in Sources */,
+				25C94AEA2ACCBADA00A6453D /* VegasChart.swift in Sources */,
+				25C94AE62ACC860F00A6453D /* Place.swift in Sources */,
+				25C94AE42ACC7A1200A6453D /* MapViewT.swift in Sources */,
+				25C94AE02ACC689E00A6453D /* Scrolling.swift in Sources */,
+				25C94AE82ACC87AF00A6453D /* ImageListBehavior.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
